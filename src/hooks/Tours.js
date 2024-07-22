@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Tour from './Tour'
 import { Row, Col } from 'reactstrap'
+import './tour.css'
 export default function Tours() {
     const [tours, setTours] = useState([
         {
@@ -122,15 +123,18 @@ export default function Tours() {
     ])
     return (
         <div>
-            <Row>
-            {
-                tours.map((item, index) => (
-                    <Col lg={3} md={4} am={6} xs={6} className="border m-2"> 
-                    <Tour key={index} t={item} />
-                    </Col>
-                )
-                )
-            }
+            <Row className='active'>
+                {
+                    tours.map((item, index) => {
+                        
+                            return (
+                            <Col lg={3} md={4} am={6} xs={6} className="border m-2">
+                                <Tour key={index} t={item} />
+                            </Col>
+                        )}
+                    
+                    )
+                }
             </Row>
         </div>
     )

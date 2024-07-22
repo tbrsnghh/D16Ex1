@@ -25,9 +25,6 @@ export default function Hook2() {
                     <h3>Perfect destination</h3>
                     <h2>Trending destinations</h2>
                 </div>
-                <button onClick={change}>
-                    Click
-                </button>
                 <Nav>
                     {
                         listCateTour.map((item, index)=>(
@@ -35,7 +32,6 @@ export default function Hook2() {
                         ))
                     }
                 </Nav>
-                <Tours/>
             </div>
         </div>
     )

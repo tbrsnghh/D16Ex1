@@ -1,4 +1,6 @@
-/* *{
-    box-sizing: border-box;
-    background-color: orange;
-} */
+.nav{
+    display: none;
+}
+.nav{
+    display: flex;
+}
